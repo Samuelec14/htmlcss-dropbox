@@ -14,8 +14,11 @@
     .full-page-container{
         width: 100%;
     }
+    img{
+       width:100% ; 
+    }
     .container{
-        max-width: 1000px;
+        max-width: 1100px;
         margin: auto;
     }
     .small-container{
@@ -30,18 +33,34 @@
         width: 50%;
     }
     .my-button{
-        padding: 8px 15px;
+        padding: 10px 15px;
         border: none;
     }
     .blue-button{
         background-color: rgb(0, 97, 255);
-        color: white;
+        color: rgb(234, 233, 233);
+    }
+    .column-30pc{
+        width: 35%;
+    }
+     .column-70pc{
+        width: 65%;
+    }
+    .light-blue-bg{
+        background-color: rgb(180, 208, 231);
     }
 
 /* <!-- HEADER and nav menù  -->
 */  
+    header{
+        position: sticky;
+        top: 0;
+    }
     header .my-row .column-1-2{
         padding: 20px 1%;
+    }
+    header .my-row img{
+        width: 18%;
     }
     header .full-page-container .my-row div:last-child{
         text-align: right;
@@ -64,7 +83,35 @@
 
 /* MAIN  
 */
-
+    /* <!-- SECTION 1 - H1 section --> */
+        main section:first-of-type .container{
+            position: relative;
+            top: 70px;
+        }
+        main section:first-of-type .container h1{
+            font-size: 75px;
+            font-weight: 900;
+            margin-bottom: 55px ;
+        }
+        main section:first-of-type .container .column-30pc div{
+            margin-bottom: 30px;
+        }
+        main section:first-of-type .container .column-30pc button{
+            margin-bottom: 30px;
+        }
+        main section:first-of-type .container .column-30pc div:last-of-type{
+            margin-bottom: 80px;
+        }
+        main section:first-of-type .container .column-30pc i{
+            font-size: 3.3em;
+            margin-bottom: 20px;
+        }
+        
+        main section:first-of-type .container .column-70pc img{
+            position: relative;
+            right: 30px;
+            width: 118%;
+        }
 
 /* FOOTER  
 */
@@ -79,3 +126,18 @@
         border: 1px dashed black;
         min-height: 20px;
     }
+    /* .debug main section .container{
+        background-color: rgb(64, 140, 207);
+        border: 1px dashed black;
+        min-height: 700px;
+    } */
+    /* .debug main .container .my-row .column-30pc{
+        background-color: rgb(152, 154, 74);
+        border: 1px dashed black;
+        min-height: 700px;
+    } */
+    /* .debug main .container .my-row .column-70pc{
+        background-color: rgb(176, 176, 38);
+        border: 1px dashed black;
+        min-height: 700px;
+    } */
