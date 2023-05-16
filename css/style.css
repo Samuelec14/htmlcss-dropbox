@@ -38,10 +38,9 @@
         color: white;
     }
 
-/* HEADER  
+/* <!-- HEADER and nav menù  -->
 */  
     header .my-row .column-1-2{
-        /* padding: 20px 3%; */
         padding: 20px 1%;
     }
     header .full-page-container .my-row div:last-child{
@@ -54,6 +53,14 @@
     header .full-page-container .my-row div:last-child *{
         margin-inline-start: 30px;
     }
+    header .full-page-container .my-row a{
+        color: black;
+        text-decoration: none;
+    }
+    header .full-page-container .my-row a:hover{
+        text-decoration: underline;
+    }
+
 
 /* MAIN  
 */
