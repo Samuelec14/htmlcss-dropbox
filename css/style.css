@@ -18,11 +18,11 @@
        width:100% ; 
     }
     .container{
-        max-width: 1100px;
+        max-width: 1200px;
         margin: auto;
     }
     .small-container{
-        max-width: 850px;
+        max-width: 1000px;
         margin: auto;
     }
     .my-row{
@@ -35,26 +35,44 @@
     .my-button{
         padding: 10px 15px;
         border: none;
+        font-size: 16px;
     }
     .blue-button{
         background-color: rgb(0, 97, 255);
         color: rgb(234, 233, 233);
     }
-    .column-30pc{
+    .column-35pc{
         width: 35%;
     }
-     .column-70pc{
+     .column-65pc{
         width: 65%;
+    }
+    .column-30pc{
+        width: 30%;
     }
     .light-blue-bg{
         background-color: rgb(180, 208, 231);
+    }
+    .box-header{
+        text-align: center;
+        line-height: 40px;
+        border-bottom: 2px solid rgb(214, 214, 216);
+    }
+    .small-border{
+        width: 25%;
+        border-bottom:2px solid rgb(214, 214, 216); ;
+    }
+    .blue-check{
+        color:rgb(0, 97, 255);
     }
 
 /* <!-- HEADER and nav menù  -->
 */  
     header{
+        background-color: white;
         position: sticky;
         top: 0;
+        z-index: 1;
     }
     header .my-row .column-1-2{
         padding: 20px 1%;
@@ -93,25 +111,65 @@
             font-weight: 900;
             margin-bottom: 55px ;
         }
-        main section:first-of-type .container .column-30pc div{
+        main section:first-of-type .container .column-35pc div{
             margin-bottom: 30px;
         }
-        main section:first-of-type .container .column-30pc button{
+        main section:first-of-type .container .column-35pc button{
             margin-bottom: 30px;
         }
-        main section:first-of-type .container .column-30pc div:last-of-type{
-            margin-bottom: 80px;
+        main section:first-of-type .container .column-35pc div:last-of-type{
+            margin-bottom: 150px;
         }
-        main section:first-of-type .container .column-30pc i{
+        main section:first-of-type .container .column-35pc i{
             font-size: 3.3em;
-            margin-bottom: 20px;
+            margin-bottom: 10px;
         }
         
-        main section:first-of-type .container .column-70pc img{
+        main section:first-of-type .container .column-65pc img{
             position: relative;
             right: 30px;
             width: 118%;
         }
+
+    /* <!-- SECTION  2 - Subscription planes-->  
+    */
+        main section:nth-of-type(2) .small-container .my-row{
+            justify-content: space-between;
+        }
+        main section:nth-of-type(2) .small-container{
+            margin-top: 140px;
+        }
+        main section:nth-of-type(2) .small-container > h2{
+            font-size: 2.7em;
+            margin-bottom: 50px;
+        }
+
+        /* SUBSCRIPTION PLANE BOX  
+        */
+            main section:nth-of-type(2) .small-container > span{
+                display: inline-block;
+                margin-bottom: 50px;
+                margin-inline-end: 30px;
+            }
+            
+            main section:nth-of-type(2) .small-container .my-row .column-30pc{
+                border: 2px solid rgb(214, 214, 216);
+            }
+            main section:nth-of-type(2) .small-container .my-row .column-30pc .info-box{
+                padding: 30px;
+            }
+            main section:nth-of-type(2) .small-container .my-row .column-30pc .info-box h2{
+                margin-bottom: 30px;
+            }
+            main section:nth-of-type(2) .small-container .my-row .column-30pc .info-box *{
+                margin-bottom: 30px;
+            }
+
+
+    
+    /* <!-- SECTION  3 - "Trova un partner"-->  */
+        
+
 
 /* FOOTER  
 */
@@ -121,11 +179,7 @@
 /* DEBUG  
 */
 
-    .debug header .my-row .column-1-2{
-        background-color: aliceblue;
-        border: 1px dashed black;
-        min-height: 20px;
-    }
+    
     /* .debug main section .container{
         background-color: rgb(64, 140, 207);
         border: 1px dashed black;
@@ -141,3 +195,24 @@
         border: 1px dashed black;
         min-height: 700px;
     } */
+    /* .debug main .small-container{
+        background-color: aliceblue;
+        border: 1px dashed black;
+        min-height: 50px;
+    } */
+    /* .debug .column-30pc{
+        background-color: rgb(75, 218, 91);
+        border: 1px dashed black;
+        min-height: 200px;
+    } */
+    /* .debug .sub-plane-header{
+        background-color: aqua;
+    } */
+    .debug main section:nth-of-type(3) .small-container > div{
+        background-color: blueviolet;
+        min-height: 200px;
+        margin-top: 50px;
+    }
+    .debug main section:nth-of-type(3) .small-container > div .box-header{
+        background-color: rgb(107, 80, 133);
+    }
