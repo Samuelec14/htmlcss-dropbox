@@ -11,10 +11,52 @@
     body{
         font-family: 'Open Sans', sans-serif;
     }
+    .full-page-container{
+        width: 100%;
+    }
+    .container{
+        max-width: 1000px;
+        margin: auto;
+    }
+    .small-container{
+        max-width: 850px;
+        margin: auto;
+    }
+    .my-row{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .column-1-2{
+        width: 50%;
+    }
+    .my-button{
+        padding: 8px 15px;
+        border: none;
+    }
+    .blue-button{
+        background-color: rgb(0, 97, 255);
+        color: white;
+    }
+
+/* HEADER  
+*/  
+    header .my-row .column-1-2{
+        /* padding: 20px 3%; */
+        padding: 20px 1%;
+    }
+    header .full-page-container .my-row div:last-child{
+        text-align: right;
+    }
+    header .full-page-container .my-row div:first-child *{
+        margin-inline-end: 30px;
+        margin-bottom: -5px;
+    }
+    header .full-page-container .my-row div:last-child *{
+        margin-inline-start: 30px;
+    }
 
 /* MAIN  
 */
-
 
 
 /* FOOTER  
@@ -24,3 +66,9 @@
 
 /* DEBUG  
 */
+
+    .debug header .my-row .column-1-2{
+        background-color: aliceblue;
+        border: 1px dashed black;
+        min-height: 20px;
+    }
