@@ -142,6 +142,7 @@
     */
         main section:nth-of-type(2) .small-container .my-row{
             justify-content: space-between;
+            margin-bottom: 170px;
         }
         main section:nth-of-type(2) .small-container{
             margin-top: 140px;
@@ -200,7 +201,19 @@
     /* <!-- SECTION  3 - "Trova un partner"-->  
     */
         main .section-3 .small-container{
-            margin-top: 110px;
+        }
+        main .section-3 .column-65pc{
+            padding-right: 6%;
+        }
+        main .section-3 .my-row .column-35pc > h2{
+            margin: 50px 0 20px 0;
+        }
+        main .section-3 .my-row .column-35pc > div{
+            margin-bottom: 20px;
+        }
+        main .section-3 .my-row .column-35pc > button{
+            border: 1px solid black;
+            background-color: white;
         }
     
 
@@ -341,14 +354,14 @@
     /* .debug .sub-plane-header{
         background-color: aqua;
     } */
-    .debug .section-3 .column-35pc{
+    /* .debug .section-3 .column-35pc{
         background-color: aquamarine;
         min-height: 300px;
-    }
-    .debug .section-3 .column-65pc{
+    } */
+    /* .debug .section-3 .column-65pc{
         background-color: rgb(107, 80, 133);
         min-height: 300px;
-    }
+    } */
     .debug .section-4 .column-30pc{
         background-color: rgb(104, 116, 100);
         min-height: 400px;
