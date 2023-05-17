@@ -22,7 +22,7 @@
         margin: auto;
     }
     .small-container{
-        max-width: 1000px;
+        max-width: 900px;
         margin: auto;
     }
     .my-row{
@@ -247,12 +247,27 @@
         }
         main .section-6 .my-row{
             justify-content: space-between;
+            line-height: 250px;
+            margin-bottom: 140px;
         }
-        main .section-6 .my-row{
-            margin-bottom: 100px;
-        }
+        
 
 
+    /* <!-- SECTION 7 - faq --> 
+    */
+        main .section-7 .my-row{
+            width: 100%;
+            line-height: 100px;
+            margin-bottom: 140px;
+        }
+        main .section-7 .my-row ul{
+            width: 100%;
+            list-style: none;
+        }
+        main .section-7 h2{
+            margin-bottom: 60px;
+        }
+        
 
 
 
@@ -260,6 +275,23 @@
 /* FOOTER  
 */
 
+    /* <!-- footer - SECTION 1 - bottom nav menù--> 
+    */
+        footer{
+            background-color: black;
+            color: white;
+            padding: 80px 0 0 0;
+        }
+        footer .section-1 .my-row .column-1-5{
+            width: calc(100% / 5);
+        }
+
+
+
+
+
+    /* <!-- footer - SECTION 2 - language --> 
+    */
 
 
 /* DEBUG  
@@ -331,6 +363,17 @@
     }
     main .section-6 .my-row{
         min-height: 100px;
-        line-height: 250px;
     }
-    
+    main .section-7 .small-container{
+        min-height: 100px;
+        background-color: pink;
+    }
+    main .section-7 .my-row li{
+        background-color: beige;
+        border: 2px dashed black;
+    }
+    footer .section-1 .my-row .column-1-5{
+        min-height: 240px;
+        border: 2px dashed black;
+        background-color: chartreuse;
+    }
