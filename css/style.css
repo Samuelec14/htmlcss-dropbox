@@ -29,6 +29,10 @@
         display: flex;
         flex-wrap: wrap;
     }
+    .flex-container{
+        display: flex;
+        flex-wrap: wrap;
+    }
     .column-1-2{
         width: 50%;
     }
@@ -330,10 +334,23 @@
         }
         main .section-6 .my-row{
             justify-content: space-between;
-            line-height: 250px;
+            padding: 100px 0;
             margin-bottom: 140px;
         }
-        
+        main .section-6 .small-container .my-row div > h2{
+            font-size: 2.3em;
+            color: rgb(94, 1, 40);
+        }
+        main .section-6 .small-container .my-row .column-35pc{
+            text-align: right;
+        }
+        main .section-6 .small-container .my-row > .column-35pc{
+            text-align: right;
+        }
+        main .section-6 .small-container .my-row .column-35pc > button{
+            padding: 10px 40px;
+            margin-top: 12px;
+        }
 
 
     /* <!-- SECTION 7 - faq --> 
@@ -347,8 +364,25 @@
             width: 100%;
             list-style: none;
         }
-        main .section-7 h2{
+        main .section-7 div .my-row ul > .flex-container{
+            justify-content: space-between;
+        }
+        main .section-7 div > h2{
             margin-bottom: 60px;
+            font-size: 2.3em;
+        }
+        main .section-7 .small-container .my-row .flex-container{
+            font-weight: bold;
+        }
+        main .section-7 .small-container .my-row .flex-container i{
+            padding: 10px;
+            margin-right: 40px;
+        }
+        main .section-7 .small-container .my-row .flex-container i:hover{
+            background-color: lightgray;
+        }
+        main .section-7 .small-container .my-row hr{
+            border: 1px solid lightgray;
         }
         
 
@@ -458,17 +492,17 @@
         background-color: chartreuse;
         border: 2px dashed black;
     } */
-    .debug main .section-6 .my-row{
+    /* .debug main .section-6 .my-row{
         min-height: 100px;
-    }
-    .debug main .section-7 .small-container{
+    } */
+    /* .debug main .section-7 .small-container{
         min-height: 100px;
         background-color: pink;
-    }
-    .debug main .section-7 .my-row li{
+    } */
+    /* .debug main .section-7 .my-row li{
         background-color: beige;
         border: 2px dashed black;
-    }
+    } */
     .debug footer .section-1 .my-row .column-1-5{
         min-height: 240px;
         border: 2px dashed white;
