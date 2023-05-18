@@ -72,6 +72,12 @@
     .blue-check{
         color:rgb(0, 97, 255);
     }
+    .centered{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }   
 
 /* <!-- HEADER and nav menù  -->
 */  
@@ -264,7 +270,58 @@
         main .section-5 .my-row .column-1-2{
             width: 50%;
             height: calc((100vw / 3) / 2);
+            position: relative;
         }
+        main .section-5 .my-row .column-1-2 img{
+            width: 50%;
+            filter:invert(100%);
+        }   
+        main .section-5 .my-row .left .my-row > div:first-child{
+            background-color: #a2d39b;
+        }
+        main .section-5 .my-row .left .my-row > div:nth-child(2){
+            background-color: rgb(97, 8, 43);
+        }
+        main .section-5 .my-row .left .my-row > div:nth-child(3){
+            background-color: rgb(0, 147, 206);
+        }
+        main .section-5 .my-row .left .my-row > div:last-child{
+            background-color: rgb(255, 28, 28);
+        }
+        main .section-5 .my-row .text-column > div{
+            padding: 9%;
+        }
+        main .section-5 .my-row .text-column{
+            background-color: rgb(245, 245, 245);
+        }
+        main .section-5 .my-row .text-column div > img{
+            width: 50%;
+            margin-bottom: 30px;
+        }
+        main .section-5 .my-row .text-column div > hr{
+            width: 20%;
+            margin-bottom: 30px;
+            border: 1px solid lightgray;
+        }
+        main .section-5 .my-row .text-column div > div:nth-child(3){
+            margin-bottom: 30px;
+        }
+
+        main .section-5 .my-row .right .my-row > div:first-child{
+            background-color: rgb(213, 0, 31);
+        }
+        main .section-5 .my-row .right .my-row > div:nth-child(2){
+            background-color: rgb(180, 208, 231);
+        }
+        main .section-5 .my-row .right .my-row > div:nth-child(3){
+            background-color: #0d2481;
+        }
+        main .section-5 .my-row .right .my-row > div:last-child{
+            background-color: rgb(255, 216, 48);
+        }
+
+
+
 
     /* <!-- SECTION 6 - Dropbox Business free try --> 
     */
@@ -389,18 +446,18 @@
         border: 2px dashed black;
         min-height: 200px;
     } */
-    .debug main .section-5 .full-page-container{
+    /* .debug main .section-5 .full-page-container{
         background-color: burlywood;
         min-height: 400px;
-    }
-    .debug main .section-5 .column-1-3{
+    } */
+    /* .debug main .section-5 .column-1-3{
         background-color: cadetblue;
         border: 2px dashed black;
-    }
-    .debug main .section-5 .column-1-2{
+    } */
+    /* .debug main .section-5 .column-1-2{
         background-color: chartreuse;
         border: 2px dashed black;
-    }
+    } */
     .debug main .section-6 .my-row{
         min-height: 100px;
     }
