@@ -404,12 +404,20 @@
         footer .section-1 .my-row .column-1-5{
             width: calc(100% / 5);
         }
-        footer .section-1 .my-row .column-1-5 h3{
+        footer .section-1 .my-row .column-1-5 h2{
             margin-bottom: 25px;
         }
         footer .section-1 .my-row ul li{
             line-height: 40px;
             list-style: none;
+            text-decoration: none;
+        }
+        footer .section-1 .my-row ul li a{
+            text-decoration: none;
+            color: white;
+        }
+        footer .section-1 .my-row ul li a:hover{
+            text-decoration: underline;
         }
 
 
@@ -423,6 +431,12 @@
         }
         footer .section-2 .container > div{
             padding: 40px 0;
+        }
+        footer .section-2 .container > div{
+            padding: 40px 0;
+        }
+        footer .section-2 .container > div .lang{
+            padding: 0 10px;
         }
 
 
@@ -503,8 +517,8 @@
         background-color: beige;
         border: 2px dashed black;
     } */
-    .debug footer .section-1 .my-row .column-1-5{
+    /* .debug footer .section-1 .my-row .column-1-5{
         min-height: 240px;
         border: 2px dashed white;
         background-color: black;
-    }
+    } */
